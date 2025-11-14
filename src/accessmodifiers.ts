@@ -10,15 +10,22 @@ class BankAccount {
     this.userName = userName;
     this._userBalance = userBalance;
   }
-
-  private addBalance(balance: number) {
+  // balance k set krtese
+  addBalance(balance: number) {
     this._userBalance = this._userBalance + balance;
   }
-}
 
-class StudentBankAccount extends BankAccount {
-  test() {
-    this.userBalance;
+
+
+    //   // get krbo
+
+  //   getBalance() {
+  //     return this._userBalance;
+  //   }
+
+  // getter use kore get korte chai
+  get getBalance() {
+    return this._userBalance;
   }
 }
 
